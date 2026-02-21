@@ -42,7 +42,7 @@ A comprehensive **Model Context Protocol (MCP) server** for **Adobe InDesign aut
 
 ## 📋 Prerequisites
 
-- **Adobe InDesign 2025** (or compatible version)
+- **Adobe InDesign 2026** (or compatible version)
 - **macOS** (required for AppleScript integration)
 - **Node.js 18+**
 - **MCP-compatible client** (like Claude Desktop)

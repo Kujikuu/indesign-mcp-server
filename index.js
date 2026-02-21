@@ -640,7 +640,7 @@ class InDesignMCPServer {
 
     try {
       const appleScript = `
-        tell application "Adobe InDesign 2025"
+        tell application "Adobe InDesign 2026"
           activate
           do script POSIX file "${tempScript}" language javascript
         end tell
@@ -1069,7 +1069,7 @@ class InDesignMCPServer {
               } catch (e) {}
             ` : ''}
             
-            "Text frame created on page " + (${pageIndex} + 1) + " with content: " + "${content.substring(0, 50)}${content.length > 50 ? '...' : ''}";
+            "Text frame created on page " + (${pageIndex} + 1) + " with content: " + "${content.substring(0, 50).replace(/\n/g, ' ').replace(/\r/g, '')}${content.length > 50 ? '...' : ''}";
           }
         } catch (e) {
           "Error creating text frame: " + e.message;
